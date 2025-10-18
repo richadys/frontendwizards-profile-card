@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card | Stage 0</title>
+    <style>
+      /* Reset & base */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 0;
+        background: #f4f6fb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      article {
+        background: white;
+        max-width: 420px;
+        width: 90%;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        transition: transform 0.2s ease;
+      }
+
+      article:hover {
+        transform: translateY(-4px);
+      }
+
+      figure {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
+
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #007aff;
+      }
+
+      header h2 {
+        text-align: center;
+        margin: 0.5rem 0 0;
+      }
+
+      p {
+        text-align: center;
+        color: #555;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      nav a {
+        color: #007aff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      nav a:focus, nav a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        background: #f8f9fe;
+        padding: 1rem;
+        border-radius: 12px;
+      }
+
+      section h3 {
+        margin-top: 0;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      /* Responsive layout */
+      @media (min-width: 700px) {
+        article {
+          flex-direction: row;
+          max-width: 700px;
+          align-items: flex-start;
+        }
+        .card-right {
+          flex: 1;
+        }
+        figure {
+          justify-content: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <figure>
+        <img 
+  src="./WhatsApp Image 2025-10-18 at 11.53.33_1f93adc0.jpg"
+  alt="Profile avatar of Jason Nanayaw Owusu "
+  data-testid="test-user-avatar"
+/>
+
+  
+
+
+      </figure>
+
+      <div class="card-right">
+        <header>
+          <h2 data-testid="test-user-name">Jason Nanayaw  Owusu  </h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          Frontend developer passionate about building accessible, human-friendly web experiences.
+        </p>
+
+        <p>
+          Current Time (ms): 
+          <span data-testid="test-user-time" id="current-time"></span>
+        </p>
+
+        <nav data-testid="test-user-social-links" aria-label="Social Links">
+          <ul>
+            <li>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <section data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Coding creative UIs</li>
+            <li>Gaming </li>
+            <li>Exploring new tech tool</li>
+          </ul>
+        </section>
+
+        <section data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Cluttered code</li>
+            <li>Negativity</li>
+            <li>Laziness</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script>
+      // Display current time in milliseconds
+      const timeEl = document.getElementById("current-time");
+      const updateTime = () => {
+        timeEl.textContent = Date.now();
+      };
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>

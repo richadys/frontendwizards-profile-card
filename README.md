@@ -5,11 +5,10 @@ A simple, responsive, and accessible **Profile Card** built with **HTML**, **CSS
 ---
 
 ## 🌐 Live Demo
-👉 [Your Live Demo Link (Netlify or GitHub Pages)](#)
+👉 https://richadys.github.io/frontendwizards-profile-card/
 
 ## 💻 Repository
-👉 [https://github.com/yourusername/frontendwizards-profile-card](#)
-
+👉 [https://github.com/jasonowusu/frontendwizards-profile-card](https://github.com/jasonowusu/frontendwizards-profile-card)
 ---
 
 ## ✨ Features
@@ -45,3 +44,4 @@ Each key element includes the required `data-testid` attributes for automated te
 | Dislikes Section | `test-user-dislikes` |
 
 ---
+

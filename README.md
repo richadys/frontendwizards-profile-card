@@ -1,47 +1,17 @@
-# 🚀 Frontend Wizards – Stage 0: Profile Card
+# 🚀 Frontend Wizards — Stage 0 Profile Card
 
-A simple, responsive, and accessible **Profile Card** built with **HTML**, **CSS**, and **Vanilla JavaScript** for the **Frontend Wizards Stage 0 Challenge**.
-
----
+A responsive, accessible profile card built with semantic HTML, CSS, and JavaScript.
 
 ## 🌐 Live Demo
-👉 https://richadys.github.io/frontendwizards-profile-card/
+👉 [https://https://github.com/richadys.github.io/frontendwizards-profile-card/](https://https://github.com/richadys.github.io/frontendwizards-profile-card/)
 
-## 💻 Repository
-👉 [https://github.com/jasonowusu/frontendwizards-profile-card](https://github.com/jasonowusu/frontendwizards-profile-card)
----
+## 💻 GitHub Repository
+👉 [https://github.com/https://github.com/richadys/frontendwizards-profile-card](https://github.com/https://github.com/richadys/frontendwizards-profile-card)
 
-## ✨ Features
-✅ Semantic HTML structure (article, figure, nav, section, headings)  
-✅ Responsive layout using Flexbox (mobile, tablet, desktop)  
-✅ Accessible markup (alt text, keyboard-focusable links)  
-✅ Dynamic current time in milliseconds (auto-updates with `Date.now()`)  
-✅ Social links that open safely in new tabs  
-✅ Custom avatar support (local or URL)  
-✅ Lists for hobbies and dislikes  
+## 🧰 Technologies Used
+- HTML5 (Semantic Elements)
+- CSS3 (Flexbox / Responsive Design)
+- JavaScript (Date and Dynamic Elements)
 
----
-
-## 🧰 Tech Stack
-- **HTML5**
-- **CSS3 (Flexbox)**
-- **Vanilla JavaScript**
-
----
-
-## 📋 Data Test IDs
-Each key element includes the required `data-testid` attributes for automated testing:
-
-| Element | Test ID |
-|----------|----------|
-| Profile Card Root | `test-profile-card` |
-| Name | `test-user-name` |
-| Bio | `test-user-bio` |
-| Current Time | `test-user-time` |
-| Avatar | `test-user-avatar` |
-| Social Links Container | `test-user-social-links` |
-| Hobbies Section | `test-user-hobbies` |
-| Dislikes Section | `test-user-dislikes` |
-
----
-
+## 👨‍💻 Author
+Jason Owusu 
